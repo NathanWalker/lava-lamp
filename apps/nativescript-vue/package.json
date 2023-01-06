@@ -1,5 +1,5 @@
 {
-  "name": "nativescript-vue",
+  "name": "nativescript-vue-app",
   "main": "src/app.ts",
   "version": "1.0.0",
   "private": true,
@@ -10,6 +10,8 @@
   "devDependencies": {
     "@nativescript/android": "~8.4.0",
     "@nativescript/ios": "~8.4.0",
+    "nativescript-vue": "3.0.0-beta.5",
+    "vue": "^3.2.45",
     "typescript": "~4.8.0"
   }
 }
