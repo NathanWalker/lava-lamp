@@ -1,56 +1,25 @@
 <script lang="ts" setup>
-import {
-  ref,
-  computed,
-  onMounted,
-  onUnmounted,
-  $navigateTo,
-} from "nativescript-vue";
+import { Color } from "@nativescript/core";
+import { setupLamp, ISwiftLamp } from '@lava/nativescript-lamp';
+setupLamp();
 
-const counter = ref(0);
-const message = computed(() => {
-  return `Blank {N}-Vue app: ${counter.value}`;
-});
-
-function logMessage() {
-  console.log("You have tapped the message!");
-}
-
-let interval: any;
-onMounted(() => {
-  console.log("mounted");
-  interval = setInterval(() => counter.value++, 100);
-});
-
-onUnmounted(() => {
-  console.log("unmounted");
-  clearInterval(interval);
-});
+const data: ISwiftLamp = {
+  gradientTopColor: new Color("#64b788").ios,
+  gradientMiddleColor: new Color("#64b788").ios,
+  gradientBottomColor: new Color("#35475c").ios,
+};
 </script>
 
 <template>
   <Frame>
     <Page>
-      <ActionBar>
-        <Label text="Home" class="font-bold text-lg" />
-      </ActionBar>
+      <GridLayout class="bg-black">
 
-      <GridLayout rows="*, auto, auto, *" class="px-4">
-        <Label
-          row="1"
-          class="text-xl align-middle text-center text-gray-500"
-          :text="message"
-          @tap="logMessage"
-        />
+        <SwiftUI swiftId="lavaLamp" :data="data">
+        </SwiftUI>
 
-        
+        <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1024px-Vue.js_Logo_2.svg.png?20170919082558" class="logo"/>
       </GridLayout>
     </Page>
   </Frame>
 </template>
-
-<style>
-/* .info {
-    font-size: 20;
-  } */
-</style>
