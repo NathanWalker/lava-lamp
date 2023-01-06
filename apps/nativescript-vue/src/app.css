@@ -1,0 +1,12 @@
+.logo {
+    margin-left: 20;
+    margin-top: 8;
+    vertical-align: top;
+    width: 110;
+    /* {N} specific style */
+    horizontal-align: left;
+  }
+  
+  .bg-black {
+    background-color: black;
+  }

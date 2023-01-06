@@ -1,0 +1,15 @@
+{
+  "name": "nstypescript",
+  "main": "src/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@lava/nativescript-lamp": "file:../../libs/nativescript-lamp/src",
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/swift-ui": "^1.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.4.0",
+    "@nativescript/ios": "~8.4.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDirs": [".", "../.."],
+    "baseUrl": ".",
+    "paths": {
+      "@lava/nativescript-lamp": [
+        "../../libs/nativescript-lamp/src/index.ts"
+      ]
+    }
+  }
+}

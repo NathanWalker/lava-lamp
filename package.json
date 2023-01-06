@@ -1,16 +1,60 @@
 {
-  "name": "lava-lamp",
+  "name": "lava",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-  },
   "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "setup": "npx rimraf hooks node_modules package-lock.json yarn.lock && yarn && nx run-many --target=clean --all"
+  },
   "dependencies": {
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/swift-ui": "^1.0.0-beta.0"
   },
   "devDependencies": {
-    "nx": "15.4.4",
+    "@angular/animations": "^15.0.0",
+    "@angular/common": "^15.0.0",
+    "@angular/compiler": "^15.0.0",
+    "@angular/core": "^15.0.0",
+    "@angular/forms": "^15.0.0",
+    "@angular/platform-browser": "^15.0.0",
+    "@angular/platform-browser-dynamic": "^15.0.0",
+    "@angular/router": "^15.0.0",
+    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular/compiler-cli": "^15.0.0",
+    "@nativescript/angular": "^15.0.0",
+    "@nativescript/nx": "^4.2.0",
+    "@nativescript/tailwind": "^2.0.1",
+    "@nativescript/types": "~8.4.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@ngtools/webpack": "^15.0.0",
+    "@nrwl/eslint-plugin-nx": "15.4.4",
+    "@nrwl/linter": "15.4.4",
     "@nrwl/workspace": "15.4.4",
+    "@types/node": "^18.0.0",
+    "@types/react": "npm:types-react-without-jsx-intrinsics@^16.14.30",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "nativescript-vue": "3.0.0-beta.5",
+    "nx": "15.4.4",
+    "prettier": "^2.6.2",
+    "react": "^16.14.0",
+    "react-nativescript": "^4.0.0",
+    "react-nativescript-navigation": "^4.0.0",
+    "rxjs": "~7.6.0",
+    "sass": "^1.32.0",
+    "svelte": "~3.44.0",
+    "tailwindcss": "^3.1.8",
     "typescript": "~4.8.2",
-    "prettier": "^2.6.2"
+    "vue": "^3.2.45",
+    "vue-loader": "^17.0.1",
+    "zone.js": "^0.12.0"
+  },
+  "resolutions": {
+    "vue-loader": "^17.0.1"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDirs": [".", "../.."],
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@lava/nativescript-lamp": [
+        "../../libs/nativescript-lamp/src/index.ts"
+      ]
+    }
+  }
+}

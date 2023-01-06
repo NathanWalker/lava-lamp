@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "lava-lamp",
+  "npmScope": "lava",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
@@ -10,7 +10,9 @@
           "lint",
           "test",
           "e2e"
-        ]
+        ],
+        "runtimeCacheInputs": ["node -v"],
+				"useDaemonProcess": false
       }
     }
   },
@@ -23,6 +25,12 @@
         "production",
         "^production"
       ]
+    },
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json"
+      ]
     }
   },
   "namedInputs": {
@@ -31,7 +39,8 @@
       "sharedGlobals"
     ],
     "production": [
-      "default"
+      "default",
+      "!{projectRoot}/.eslintrc.json"
     ],
     "sharedGlobals": []
   }

@@ -1,0 +1,15 @@
+{
+  "name": "nsangular",
+  "main": "./src/main.ts",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/swift-ui": "^1.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.4.0",
+    "@nativescript/ios": "~8.4.0"
+  }
+}
