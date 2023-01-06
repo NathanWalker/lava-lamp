@@ -1,13 +1,12 @@
-# Lava Lamp - Light up your insight with wonder
+**Lava Lamp** - *Light up your insight with wonder*
 
 <img src="https://raw.githubusercontent.com/NativeScript/artwork/main/logo/export/NativeScript_Logo_Wide_White_Blue_Rounded_Blue.png" width="200"/> 
 
 iOS apps flavored with Angular, React, Solid, Svelte, TypeScript and Vue
 
-- [Lava Lamp - Light up your insight with wonder](#lava-lamp---light-up-your-insight-with-wonder)
-  - [Setup to Play](#setup-to-play)
-  - [Taste the Rainbow](#taste-the-rainbow)
-  - [What is This](#what-is-this)
+- [Setup to Play](#setup-to-play)
+- [Taste the Rainbow](#taste-the-rainbow)
+- [What is This?](#what-is-this)
 
 ## Setup to Play
 
@@ -58,7 +57,7 @@ yarn nx run nativescript-typescript:ios
 yarn nx run nativescript-vue:ios
 ```
 
-## What is This
+## What is This?
 
 An @NxDevTools workspace with Angular, React, Solid, Svelte, TypeScript and Vue iOS apps all sharing the same SwiftUI files via @NativeScript
 Inspired by [@Inncoder_](https://twitter.com/Inncoder_)
@@ -67,5 +66,5 @@ Inspired by [@Inncoder_](https://twitter.com/Inncoder_)
 The workspace combines yarn workspaces with Nx to hoist dependencies where needed to share.
 
 - Each app shares iOS Resources including SwiftUI files from [here](tools/App_Resources/iOS/src).
-  - Each app's `nativescript.config.ts` configures the shared resources via the `appResourcesPath` property
+- Each app's `nativescript.config.ts` configures the shared resources via the `appResourcesPath` property
 
