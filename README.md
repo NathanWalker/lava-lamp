@@ -7,6 +7,7 @@ iOS apps flavored with Angular, React, Solid, Svelte, TypeScript and Vue
 - [Setup to Play](#setup-to-play)
 - [Taste the Rainbow](#taste-the-rainbow)
 - [What is This?](#what-is-this)
+- [Credits](#credits)
 
 ## Setup to Play
 
@@ -59,12 +60,13 @@ yarn nx run nativescript-vue:ios
 
 ## What is This?
 
-An @NxDevTools workspace with Angular, React, Solid, Svelte, TypeScript and Vue iOS apps all sharing the same SwiftUI files via @NativeScript
-Inspired by [@Inncoder_](https://twitter.com/Inncoder_)
-[link to tweet]()
+An Nx workspace with Angular, React, Solid, Svelte, TypeScript and Vue iOS apps all sharing the same SwiftUI files via NativeScript.
 
 The workspace combines yarn workspaces with Nx to hoist dependencies where needed to share.
 
 - Each app shares iOS Resources including SwiftUI files from [here](tools/App_Resources/iOS/src).
 - Each app's `nativescript.config.ts` configures the shared resources via the `appResourcesPath` property
 
+## Credits
+
+Inspired by [@Inncoder_](https://twitter.com/Inncoder_)
