@@ -14,7 +14,7 @@ iOS apps flavored with Angular, React, Solid, Svelte, TypeScript and Vue
 Prerequisites:
 - [NativeScript Environment Setup](https://docs.nativescript.org/environment-setup.html)
 - yarn installed: `npm install -g yarn` (tested with 1.22.19)
-- node 16+
+- node >=16 (recommend 18.x.x)
 
 ```
 yarn setup
