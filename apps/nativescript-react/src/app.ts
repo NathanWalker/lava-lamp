@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { start, registerElement } from 'react-nativescript';
+import { start, registerElement, NativeScriptProps, ContentViewAttributes } from 'react-nativescript';
 import { SwiftUI } from '@nativescript/swift-ui'
 import { MainApp } from './components/MainApp';
 
@@ -12,6 +12,18 @@ import { MainApp } from './components/MainApp';
 // - false: only error logs.
 Object.defineProperty(global, '__DEV__', { value: false });
 
+// To use swiftUI within JSX
+interface SwiftUIAttrs extends ContentViewAttributes {
+    swiftId: string;
+    data: any;
+}
+declare global {
+    module JSX {
+        interface IntrinsicElements {
+            swiftUI: NativeScriptProps<SwiftUIAttrs, SwiftUI>,
+        }
+    }
+}
 
 registerElement('swiftUI', () => <any>SwiftUI);
 
