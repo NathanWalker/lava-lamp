@@ -5,13 +5,13 @@
   "private": true,
   "dependencies": {
     "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0-beta.0"
+    "@nativescript/swift-ui": "^1.0.0"
   },
   "devDependencies": {
     "@nativescript/android": "~8.4.0",
     "@nativescript/ios": "~8.4.0",
     "nativescript-vue": "3.0.0-beta.5",
     "vue": "^3.2.45",
-    "typescript": "~4.8.0"
+    "typescript": "4.9.5"
   }
 }

@@ -6,7 +6,7 @@
   "dependencies": {
     "@lava/nativescript-lamp": "file:../../libs/nativescript-lamp/src",
     "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0-beta.0"
+    "@nativescript/swift-ui": "^1.0.0"
   },
   "devDependencies": {
     "@nativescript/android": "~8.4.0",
