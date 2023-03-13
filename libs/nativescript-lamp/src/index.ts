@@ -1,5 +1,4 @@
 import {
-  DefaultSwiftUIHolder,
   registerSwiftUI,
   UIDataDriver,
 } from '@nativescript/swift-ui';
@@ -14,6 +13,6 @@ export function setupLamp() {
   registerSwiftUI(
     'lavaLamp',
     (view) =>
-      new UIDataDriver(<DefaultSwiftUIHolder>LavaLampProvider.new(), view)
+      new UIDataDriver(LavaLampProvider.new(), view)
   );
 }
