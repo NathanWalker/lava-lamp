@@ -10,8 +10,8 @@
     "setup": "npx rimraf hooks node_modules package-lock.json yarn.lock && yarn && nx run-many --target=clean --all"
   },
   "dependencies": {
-    "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0"
+    "@nativescript/core": "next",
+    "@nativescript/swift-ui": "^1.1.0"
   },
   "devDependencies": {
     "@angular/animations": "^15.0.0",

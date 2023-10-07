@@ -9,22 +9,22 @@
     ]
   },
   "dependencies": {
-    "@nativescript-community/solid-js": "^0.0.4-alpha.2",
-    "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0",
-    "dominative": "^0.0.7-alpha.2",
-    "solid-js": "^1.6.6",
-    "undom-ng": "^1.0.2"
+    "@nativescript-community/solid-js": "^0.0.4-alpha.5",
+    "@nativescript/core": "next",
+    "@nativescript/swift-ui": "^1.1.0",
+    "dominative": "^0.0.9-alpha.4",
+    "solid-js": "^1.7.12",
+    "undom-ng": "^1.0.10"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.4.0",
-    "@nativescript/ios": "~8.4.0",
+    "@nativescript/android": "~8.5.0",
+    "@nativescript/ios": "~8.5.0",
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
     "babel": "^6.23.0",
     "babel-loader": "^9.1.0",
-    "babel-preset-solid": "^1.6.6",
-    "solid-refresh": "^0.4.1"
+    "babel-preset-solid": "^1.7.12",
+    "solid-refresh": "^0.5.3"
   }
 }
 

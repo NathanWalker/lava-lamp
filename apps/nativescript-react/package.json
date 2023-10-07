@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0"
+    "@nativescript/core": "next",
+    "@nativescript/swift-ui": "^1.1.0"
   },
   "devDependencies": {
     "@nativescript/android": "~8.4.0",
