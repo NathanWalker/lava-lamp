@@ -11,15 +11,15 @@
     ]
   },
   "dependencies": {
-    "@nativescript/core": "~8.4.0",
-    "@nativescript/swift-ui": "^1.0.0"
+    "@nativescript/core": "next",
+    "@nativescript/swift-ui": "^1.1.0"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.4.0",
-    "@nativescript/ios": "~8.4.0",
+    "@nativescript/android": "~8.5.0",
+    "@nativescript/ios": "~8.5.0",
     "svelte-loader": "^3.1.2",
     "svelte-native": "~1.0.0",
     "svelte-native-preprocessor": "^1.0.0",
-    "svelte-preprocess": "^4.7.0"
+    "svelte-preprocess": "^5.0.4"
   }
 }

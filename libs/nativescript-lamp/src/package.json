@@ -1,5 +1,5 @@
 {
-    "name": "@lava/nativescript-lamp",
-    "version": "1.0.0",
-    "main": "index"
+  "name": "@lava/nativescript-lamp",
+  "version": "1.0.0",
+  "main": "index"
 }
