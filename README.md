@@ -14,7 +14,7 @@ iOS apps flavored with Angular, React, Solid, Svelte, TypeScript and Vue
 Prerequisites:
 - [NativeScript Environment Setup](https://docs.nativescript.org/environment-setup.html)
 - yarn installed: `npm install -g yarn` (tested with 1.22.19)
-- node >=16 (recommend 18.x.x)
+- node >=20 
 
 ```
 yarn setup
@@ -25,37 +25,37 @@ yarn setup
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="60"/>
 
 ```
-yarn nx run nativescript-angular:ios
+yarn nx debug nativescript-angular ios
 ```
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1000px-React-icon.svg.png" width="60"/>
 
 ```
-yarn nx run nativescript-react:ios
+yarn nx debug nativescript-react ios
 ```
 
 <img src="https://www.solidjs.com/img/logo/without-wordmark/logo.png" width="60"/>
 
 ```
-yarn nx run nativescript-solid:ios
+yarn nx debug nativescript-solid ios
 ```
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/996px-Svelte_Logo.svg.png?20191219133350" width="60"/>
 
 ```
-yarn nx run nativescript-svelte:ios
+yarn nx debug nativescript-svelte ios
 ```
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20221110153201" width="60"/>
 
 ```
-yarn nx run nativescript-typescript:ios
+yarn nx debug nativescript-typescript ios
 ```
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1024px-Vue.js_Logo_2.svg.png?20170919082558" width="60"/>
 
 ```
-yarn nx run nativescript-vue:ios
+yarn nx debug nativescript-vue ios
 ```
 
 ## What is This?

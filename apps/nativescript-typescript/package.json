@@ -5,11 +5,11 @@
   "private": true,
   "dependencies": {
     "@lava/nativescript-lamp": "file:../../libs/nativescript-lamp/src",
-    "@nativescript/core": "next",
-    "@nativescript/swift-ui": "^1.1.0"
+    "@nativescript/core": "~8.8.0",
+    "@nativescript/swift-ui": "^4.0.2"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.5.0",
-    "@nativescript/ios": "~8.5.0"
+    "@nativescript/android": "~8.8.0",
+    "@nativescript/ios": "~8.8.0"
   }
 }

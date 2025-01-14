@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-center {
+    horizontal-align: center;
+}
+.h-left {
+    horizontal-align: left;
+}
+.h-right {
+    horizontal-align: right;
+}

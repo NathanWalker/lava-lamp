@@ -5,11 +5,12 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "next",
-    "@nativescript/swift-ui": "^1.1.0"
+    "@nativescript/core": "~8.8.0",
+    "@nativescript/swift-ui": "^4.0.2",
+    "@nativescript/tailwind": "^2.1.0"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.5.0",
-    "@nativescript/ios": "~8.5.0"
+    "@nativescript/android": "~8.8.0",
+    "@nativescript/ios": "~8.8.0"
   }
 }

@@ -14,25 +14,36 @@
         "forDevice": true
       }
     },
-    "ios": {
-      "executor": "@nativescript/nx:build",
+    "debug": {
+      "executor": "@nativescript/nx:debug",
       "options": {
-        "platform": "ios",
-        "noHmr": true
-      }
+        "noHmr": true,
+        "uglify": false,
+        "release": false,
+        "forDevice": false,
+        "prepare": false
+      },
+      "dependsOn": [
+        "^build"
+      ]
     },
-    "android": {
-      "executor": "@nativescript/nx:build",
+    "prepare": {
+      "executor": "@nativescript/nx:prepare",
       "options": {
-        "platform": "android",
-        "noHmr": true
-      }
+        "noHmr": true,
+        "production": true,
+        "uglify": true,
+        "release": true,
+        "forDevice": true,
+        "prepare": true
+      },
+      "dependsOn": [
+        "^build"
+      ]
     },
     "clean": {
-      "executor": "@nativescript/nx:build",
-      "options": {
-        "clean": true
-      }
+      "executor": "@nativescript/nx:clean",
+      "options": {}
     }
   }
 }

@@ -9,30 +9,31 @@ import SwiftUI
 
 @objc
 class LavaLampProvider: UIViewController, SwiftUIProvider {
+    private var swiftUI: LavaLamp?
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    required public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    /// Receive data from NativeScript
+    func updateData(data: NSDictionary) {
+        
+        if (self.swiftUI == nil) {
+            swiftUI = LavaLamp()
+            setupSwiftUIView(content: swiftUI)
+        }
 
-  // MARK: INIT
-
-  required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-  }
-
-  required public init() {
-    super.init(nibName: nil, bundle: nil)
-  }
-
-  public override func viewDidLoad() {
-    super.viewDidLoad()
-    setupSwiftUIView(content: swiftUIView)
-  }
-
-  // MARK: PRIVATE
-  private var swiftUIView = LavaLamp()
-
-  /// Receive data from NativeScript
-  func updateData(data: NSDictionary) {
-    data.forEach { (k,v) in swiftUIView.data.props[k] = v }
-  }
-
-  /// Allow sending of data to NativeScript
-  var onEvent: ((NSDictionary) -> ())?
+        data.forEach { (k,v) in swiftUI!.data.props[k] = v }
+    }
+    
+    /// Send data to NativeScript
+    var onEvent: ((NSDictionary) -> ())?
 }
